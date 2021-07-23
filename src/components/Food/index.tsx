@@ -1,4 +1,4 @@
-import { Component } from "react";
+
 import { FiEdit3, FiTrash } from "react-icons/fi";
 
 import { Container } from "./styles";
@@ -10,7 +10,7 @@ interface FoodComponentProps {
   key: number;
   food: FoodInterface;
   handleDelete: (arg0: number) => void;
-  handleEditFood: ({}) => void;
+  handleEditFood: (food:FoodInterface) => void;
 }
 
 function Food(props: FoodComponentProps) {

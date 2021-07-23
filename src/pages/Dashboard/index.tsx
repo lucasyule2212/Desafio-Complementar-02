@@ -6,6 +6,7 @@ import ModalEditFood from "../../components/ModalEditFood";
 import { FoodsContainer } from "./styles";
 import { useEffect } from "react";
 import { useState } from "react";
+
 export interface FoodInterface {
   id: number;
   name: string;
@@ -14,6 +15,7 @@ export interface FoodInterface {
   avaiable: boolean;
   image: string;
 }
+
 function Dashboard() {
   const [foodState, setFoodState] = useState<FoodInterface[]>([]);
   const [editingFoodState, setEditingFoodState] = useState<FoodInterface>(
